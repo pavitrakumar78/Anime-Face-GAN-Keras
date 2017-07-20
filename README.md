@@ -7,11 +7,9 @@ A DCGAN to generate anime faces using custom dataset in Keras.
 The dataset is created by crawling anime database websites using `curl`. The script `anime_dataset_gen.py` crawls and processes the images into 64x64 PNG images with only the faces cropped.  
 
 ## Examples of the dataset:  
- <img>
- 
- <img>
- 
- <img>
+ ![trainimg1.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/train_img1.png)
+ ![trainimg2.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/train_img2.png)
+ ![trainimg3.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/train_img3.png)
  
  # Network  
 
@@ -23,7 +21,7 @@ But none of these combinations yielded any decent results. The case was either G
 
 # Training
 
-Only simple GAN training methods are used. An overview of what happens each step is:  
+Only simple GAN training methods are used. Training is done on about 22,000 images. Images are not loaded entirely into memory instead, each time a batch is sampled, only the sampled images are loaded. An overview of what happens each step is:  
 -Sample images from dataset (real data)  
 -Generate images using generator (gaussian noise as input) (fake data)  
 -Add noise to labels of real and fake data  
@@ -32,15 +30,22 @@ Only simple GAN training methods are used. An overview of what happens each step
 -Train GAN on fake images and real data labels  
 Training is done for 10,000 steps. In my setup (GTX 660; i5 4670) it takes 10-11 secs for each step.  
 
+## Losses plot:
+
+![realvsfakeloss.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/realvsfakeloss.png)
+
+![genloss.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/genloss.png)
+
 ## Full Training as a GIF: (images sampled every 100 step)
-<gif>  
+
+![movie.gif](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/movie.gif)
 
 ## Faces generated at the end of 10,000 steps:
 
-<img>
-<img>
-<img>
-<img>
+![finalimg1.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img1.png)
+![finalimg2.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img2.png)
+![finalimg3.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img3.png)
+![finalimg4.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img4.png)
 
 The faces look pretty good IMO, might look more like an actual face with more training, more data and probably with a better network.
 
