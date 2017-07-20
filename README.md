@@ -30,7 +30,7 @@ Only simple GAN training methods are used. Training is done on about 22,000 imag
 -Train GAN on fake images and real data labels  
 Training is done for 10,000 steps. In my setup (GTX 660; i5 4670) it takes 10-11 secs for each step.  
 
-## Losses plot:
+## Loss plot:
 
 ![realvsfakeloss.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/realvsfakeloss.png)
 
