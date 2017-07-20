@@ -49,9 +49,9 @@ Training is done for 10,000 steps. In my setup (GTX 660; i5 4670) it takes 10-11
 The faces look pretty good IMO, might look more like an actual face with more training, more data and probably with a better network.
 
 # Resources
-https://github.com/tdrussell/IllustrationGAN
-https://github.com/jayleicn/animeGAN
-https://github.com/forcecore/Keras-GAN-Animeface-Character
-
-https://distill.pub/2016/deconv-checkerboard/
-https://kivantium.net/keras-bilinear
+https://github.com/tdrussell/IllustrationGAN  
+https://github.com/jayleicn/animeGAN  
+https://github.com/forcecore/Keras-GAN-Animeface-Character  
+  
+https://distill.pub/2016/deconv-checkerboard/  
+https://kivantium.net/keras-bilinear  
