@@ -42,7 +42,6 @@ Training is done for 10,000 steps. In my setup (GTX 660; i5 4670) it takes 10-11
 
 ## Faces generated at the end of 10,000 steps:
 
-![finalimg1.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img1.png)
 ![finalimg2.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img2.png)
 ![finalimg3.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img3.png)
 ![finalimg4.png](https://github.com/pavitrakumar78/Anime-Face-GAN-Keras/blob/master/images/final_img4.png)
